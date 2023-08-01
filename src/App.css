@@ -1,0 +1,14 @@
+.form-check-input {
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: blueviolet !important;
+  border: none;
+}
+/* .form-check-input:focus {
+  border-color: #ced4da !important;
+} */
+
+.btn:hover {
+  border-color: blueviolet !important;
+}
