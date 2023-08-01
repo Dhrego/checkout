@@ -35,9 +35,9 @@ function App() {
                 </label>
               </div> */}
               <div className="">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex gap-3">
                   <label
-                    class="btn border-secondary-subtle py-2 col-5 form-check-label"
+                    class="btn border-secondary-subtle py-2 col form-check-label"
                     for="flexRadioDefault1"
                   >
                     <span>Default radio</span>
@@ -49,8 +49,8 @@ function App() {
                     />
                   </label>
                   <label
-                    class="btn border-secondary-subtle py-2 col-5 form-check-label"
-                    for="flexRadioDefault1"
+                    class="btn border-secondary-subtle py-2 col form-check-label"
+                    for="flexRadioDefault2"
                   >
                     <span>Default radio</span>
                     <input
