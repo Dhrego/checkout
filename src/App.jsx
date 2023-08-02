@@ -86,7 +86,7 @@ function App() {
                     type="text"
                     className="form-control py-2"
                     id="inputAddress"
-                    placeholder="1234 Main St"
+                    placeholder="Card Number"
                   />
                 </div>
                 <div className="col-12">
