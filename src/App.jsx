@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
               </a>
             </div>
           </nav>
-          <div className="container mx-5 row">
-            <div className="col me-5">
+          <div className="container-md ms-md-5 row">
+            <div className="col-md me-5">
               <p className="fs-5">Add your payment information</p>
 
               {/* <div className="form-check row p-2">
@@ -35,12 +35,12 @@ function App() {
                 </label>
               </div> */}
               <div className="">
-                <div className="d-flex gap-3">
+                <div className="col-md d-flex gap-3">
                   <label
                     class="btn border-secondary-subtle py-2 col form-check-label"
                     for="flexRadioDefault1"
                   >
-                    <span>Default radio</span>
+                    <span>Card</span>
                     <input
                       class="form-check-input float-end"
                       type="radio"
@@ -52,7 +52,7 @@ function App() {
                     class="btn border-secondary-subtle py-2 col form-check-label"
                     for="flexRadioDefault2"
                   >
-                    <span>Default radio</span>
+                    <span>Paypal</span>
                     <input
                       class="form-check-input float-end"
                       type="radio"
@@ -63,86 +63,100 @@ function App() {
                 </div>
               </div>
 
-              <form className="row g-3">
+              <form className="row mt-3 g-3">
+                <p className="fs-6 m-0">Card details</p>
                 <div className="col-md-6">
-                  <label for="inputEmail4" className="form-label">
-                    Email
-                  </label>
                   <input
-                    type="email"
-                    className="form-control"
+                    type="text"
+                    className="form-control py-2"
                     id="inputEmail4"
+                    placeholder="Name"
                   />
                 </div>
                 <div className="col-md-6">
-                  <label for="inputPassword4" className="form-label">
-                    Password
-                  </label>
                   <input
-                    type="password"
-                    className="form-control"
+                    type="text"
+                    className="form-control py-2"
                     id="inputPassword4"
+                    placeholder="Surname"
                   />
                 </div>
                 <div className="col-12">
-                  <label for="inputAddress" className="form-label">
-                    Address
-                  </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control py-2"
                     id="inputAddress"
                     placeholder="1234 Main St"
                   />
                 </div>
                 <div className="col-12">
                   <label for="inputAddress2" className="form-label">
-                    Address 2
+                    Billing address{" "}
+                    <span className="text-secondary">(optional)</span>
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control py-2"
                     id="inputAddress2"
-                    placeholder="Apartment, studio, or floor"
+                    placeholder="Address"
                   />
                 </div>
                 <div className="col-md-6">
-                  <label for="inputCity" className="form-label">
-                    City
-                  </label>
-                  <input type="text" className="form-control" id="inputCity" />
+                  <input
+                    type="text"
+                    className="form-control py-2"
+                    id="inputCity"
+                    placeholder="City"
+                  />
                 </div>
-                <div className="col-md-4">
-                  <label for="inputState" className="form-label">
-                    State
-                  </label>
-                  <select id="inputState" className="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control py-2"
+                    id="inputState"
+                    placeholder="State"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control py-2"
+                    id="inputZip"
+                    placeholder="ZIP"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <select
+                    class="form-select py-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Ghana</option>
+                    <option value="1">United States</option>
+                    <option value="2">Italy</option>
+                    <option value="3">Japan</option>
                   </select>
                 </div>
-                <div className="col-md-2">
-                  <label for="inputZip" className="form-label">
-                    Zip
-                  </label>
-                  <input type="text" className="form-control" id="inputZip" />
+
+                <p className="mb-0">
+                  Compay details{" "}
+                  <span className="text-secondary">(optional)</span>
+                </p>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control py-2"
+                    id="inputEmail4"
+                    placeholder="Name"
+                  />
                 </div>
-                <div className="col-12">
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      id="gridCheck"
-                    />
-                    <label className="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <button type="submit" className="btn btn-primary">
-                    Sign in
-                  </button>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    maxLength={20}
+                    className="form-control py-2"
+                    id="inputNumber"
+                    placeholder="Address"
+                  />
                 </div>
               </form>
             </div>
