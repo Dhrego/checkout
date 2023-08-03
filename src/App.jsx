@@ -3,8 +3,8 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <body className="container-fluid vh-100 d-flex jusfify-content-center align-items-center">
-        <div className="container col-10 p-5 bg-white">
+      <body className="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div className="container col p-5 bg-white">
           <nav className="navbar mb-5">
             <div className="container">
               <a className="navbar-brand" href="#">
