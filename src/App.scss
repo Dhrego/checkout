@@ -1,18 +1,12 @@
-.form-check-input {
+.form-check-input, .form-select {
   box-shadow: none !important;
 }
 .form-check-input:checked {
   background-color: blueviolet !important;
   border: none !important;
 }
-/* .form-check-input:focus {
-  border-color: #ced4da !important;
-} */
 
-.btn:hover {
-  border-color: blueviolet !important;
-}
-.btn-check:checked{
+.btn-check:checked, .form-control:focus, .form-select:focus{
   border-color: blueviolet !important;
 }
 .form-control{
@@ -21,3 +15,12 @@
 a{
   color:blueviolet !important;
 }
+.sub{
+  color: white !important;
+  background-color: blueviolet !important;
+}
+
+.btn.border-secondary-subtle{
+border-color:  blueviolet !important;
+}
+

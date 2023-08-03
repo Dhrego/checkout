@@ -212,7 +212,7 @@ function App() {
                 </div>
               </div>
               <div className="container-md row mt-4 mb-3">
-                <div className="col text-white  text-center rounded bg-primary fs-2">
+                <div className="col text-white mx-1 text-center rounded-3 bg-primary fs-2">
                   R
                 </div>
                 <div className="col-6">
@@ -236,9 +236,7 @@ function App() {
                 <p>$45.00 USD</p>
               </div>
               <div className="d-grid my-2 col-11">
-                <button className="btn p-3 btn-secondary-outline">
-                  Subscribe
-                </button>
+                <button className="btn sub p-3">Subscribe</button>
                 <p className="text-body-tertiary my-2 fs-6">
                   By continuing, you agree to Clipchamp's{" "}
                   <a href="#" className="text-body-tertiary">
