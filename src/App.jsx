@@ -16,7 +16,7 @@ function App() {
               </a>
             </div>
           </nav>
-          <div className="container-md ms-md-5 row">
+          <div className="container-md ms-md-5 row pb-5">
             <div className="col-md me-5">
               <p className="fs-5">Add your payment information</p>
 
@@ -40,7 +40,8 @@ function App() {
                     class="btn border-secondary-subtle py-2 col form-check-label"
                     for="flexRadioDefault1"
                   >
-                    <span>Card</span>
+                    <span>Card</span>{" "}
+                    <img className="img-fluid w-25" src="card.png" alt="" />
                     <input
                       class="form-check-input float-end"
                       type="radio"
@@ -52,7 +53,12 @@ function App() {
                     class="btn border-secondary-subtle py-2 col form-check-label"
                     for="flexRadioDefault2"
                   >
-                    <span>Paypal</span>
+                    <img
+                      className="img-fluid w-25"
+                      src="paypal.png"
+                      alt=""
+                      srcset=""
+                    />
                     <input
                       class="form-check-input float-end"
                       type="radio"
@@ -81,13 +87,30 @@ function App() {
                     placeholder="Surname"
                   />
                 </div>
+
                 <div className="col-12">
-                  <input
-                    type="text"
-                    className="form-control py-2"
-                    id="inputAddress"
-                    placeholder="Card Number"
-                  />
+                  <div className="input-group">
+                    <input
+                      type="tel"
+                      inputMode="numeric"
+                      className="form-control py-2"
+                      pattern="(?:0[1-9]|1[0-2])/[0-9]{2}"
+                      maxlength="19"
+                      placeholder="Card Number"
+                    />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="mm/yy"
+                      maxLength={5}
+                    />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="ccv"
+                      maxLength={3}
+                    />
+                  </div>
                 </div>
                 <div className="col-12">
                   <label for="inputAddress2" className="form-label">
@@ -160,8 +183,32 @@ function App() {
                 </div>
               </form>
             </div>
-            <div className="col-4">
+            <div className="col-md-5">
               <p className="fs-5">Review your team's subscription</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">
+                  Pay monthly
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">
+                  Pay yearly
+                </label>
+              </div>
             </div>
           </div>
         </div>
