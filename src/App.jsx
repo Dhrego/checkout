@@ -3,8 +3,8 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <body className="container-fluid vh-100 d-flex justify-content-center align-items-center">
-        <div className="container col p-5 bg-white">
+      <main className="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div className="container p-5 bg-white">
           <nav className="navbar mb-5">
             <div className="container">
               <a className="navbar-brand" href="#">
@@ -20,20 +20,6 @@ function App() {
             <div className="col-md me-5">
               <p className="fs-5">Add your payment information</p>
 
-              {/* <div className="form-check row p-2">
-                <label
-                  class="btn border-secondary-subtle  col-6"
-                  for="flexCheckDefault"
-                >
-                  <input
-                    class="form-check-input ms-5"
-                    type="radio"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <span className="text-dark">Default checkbox</span>
-                </label>
-              </div> */}
               <div className="">
                 <div className="col-md d-flex gap-3">
                   <label
@@ -107,7 +93,7 @@ function App() {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="ccv"
+                      placeholder="ccv/cvv"
                       maxLength={3}
                     />
                   </div>
@@ -253,7 +239,7 @@ function App() {
             </div>
           </div>
         </div>
-      </body>
+      </main>
     </>
   );
 }
