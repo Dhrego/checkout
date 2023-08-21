@@ -16,7 +16,7 @@ function App() {
               </a>
             </div>
           </nav>
-          <div className="container-md ms-md-5 row pb-5">
+          <div className="container-md-fluid ms-md-5 row pb-5">
             <div className="col-md me-5">
               <p className="fs-5">Add your payment information</p>
 
@@ -169,9 +169,9 @@ function App() {
                 </div>
               </form>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 mt-md-0 mt-2">
               <p className="fs-5">Review your team's subscription</p>
-              <div>
+              <div className="d-flex gap-5">
                 <div class="form-check form-check-inline">
                   <input
                     class="form-check-input"
@@ -214,14 +214,14 @@ function App() {
                   </a>
                 </p>
               </div>
-              <div className="my-4 col-11">
+              <div className="my-4 col-md-11">
                 <hr />
               </div>
               <div className="col-11 fs-4 d-flex justify-content-between">
                 <p>To pay now</p>
                 <p>$45.00 USD</p>
               </div>
-              <div className="d-grid my-2 col-11">
+              <div className="d-grid my-2 col-md-11">
                 <button className="btn sub p-3">Subscribe</button>
                 <p className="text-body-tertiary my-2 fs-6">
                   By continuing, you agree to Clipchamp's{" "}
